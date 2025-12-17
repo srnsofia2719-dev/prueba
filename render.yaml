@@ -1,17 +1,9 @@
 services:
   - type: web
     name: formulario-syemed
-    runtime: python
     env: python
-    region: oregon
-    plan: free
-    buildCommand: |
-      pip install --upgrade pip
-      pip install -r requirements.txt
-    startCommand: python -m streamlit run formulario_ST_V13.py --server.port=$PORT --server.address=0.0.0.0 --server.headless=true --server.enableCORS=false --server.enableXsrfProtection=false
+    buildCommand: pip install -r requirements.txt
     envVars:
-      - key: PYTHON_VERSION
-        value: 3.11.0
       - key: DATABASE_URL
         sync: false
       - key: CLOUDINARY_CLOUD_NAME
