@@ -2,7 +2,10 @@ services:
   - type: web
     name: formulario-syemed
     env: python
-    buildCommand: pip install -r requirements.txt
+    buildCommand: |
+      pip install --upgrade pip
+      pip install -r requirements.txt
+    startCommand: streamlit run formulario_ST_V13.py --server.port=$PORT --server.address=0.0.0.0 --server.headless=true
     envVars:
       - key: DATABASE_URL
         sync: false
