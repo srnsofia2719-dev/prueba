@@ -1,0 +1,1 @@
+web: streamlit run formulario_ST_V13.py --server.port=$PORT --server.address=0.0.0.0 --server.headless=true
