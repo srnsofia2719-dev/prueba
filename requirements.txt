@@ -6,4 +6,4 @@ email-validator==2.1.0
 reportlab==4.0.7
 python-dotenv==1.0.0
 cloudinary==1.37.0
-python-magic==0.4.27
+python-magic-bin==0.4.27
