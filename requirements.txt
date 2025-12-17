@@ -1,0 +1,9 @@
+streamlit
+psycopg2-binary
+pandas
+sqlalchemy
+email-validator
+reportlab
+python-dotenv
+cloudinary
+python-magic
